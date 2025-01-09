@@ -178,7 +178,7 @@
                 document.getElementById(`decToBin-${index}`).disabled = true;
             });
 
-            const grade = Math.min(5, 5 - correctAnswers / 2);
+            const grade = 6 - correctAnswers / 2;
             const elapsedTime = (new Date().getTime() - startTime) / 60000; // in minutes
             const pluses = grade === 1 ? (elapsedTime <= 4 ? 2 : elapsedTime <= 6 ? 1 : 0) : 0;
 
